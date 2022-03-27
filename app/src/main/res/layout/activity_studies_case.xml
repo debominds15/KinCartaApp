@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+        <variable
+            name="caseStudiesViewModel"
+            type="com.kincarta.app.ui.views.CaseStudiesViewModel" />
+
+    </data>
+    <!-- In order to use tabs, coordinator layout is useful-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--This appbarlayout covers the toolbar and tablayout-->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <!--toolbar is one component which is necessary
+                because if we not use this then title is not shown
+                when project executed-->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:titleTextColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/custom_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_margin_20"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <!-- tablayout which contains which is
+                important to show tabs -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabIndicatorColor="#FFF"
+                app:tabIndicatorHeight="@dimen/margin_3dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/colorPrimaryDark"
+                app:tabTextColor="@color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- view pager is used to open other fragment by using
+            left or right swip-->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/tab_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_5dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/case_studies_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

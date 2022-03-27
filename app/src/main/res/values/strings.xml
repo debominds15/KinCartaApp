@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KinCartaApp</string>
+    <string name="no_items">No items</string>
+    <string name="no_data">No data</string>
+    <string name="content_description_expanded_image">ImageView with expanded image</string>
+    <string name="content_description_collapsed_image">ImageView with collapsed image</string>
+    <string name="label_save">Save</string>
+    <string name="sort_by">Sort By</string>
+    <string name="lbl_alphabetical">Alphabetical</string>
+    <string name="lbl_reverse">Reverse</string>
+    <string name="lbl_category">Category</string>
+    <string name="clear_filter">Clear Filter</string>
+    <string name="cached_successfully">Cached data successfully</string>
+    <string name="cached_unsuccessful">Unable to cache data</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable/bg_chip_state_list.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/detail_card_background.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_filter_alt_24.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_filter_alt_off_24.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable/tab_color_selector.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/layout/activity_case_study_detail.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_studies_case.xml" value="0.2513586956521739" />
+        <entry key="app/src/main/res/layout/bg_chip_state_list.xml" value="0.17604166666666668" />
+        <entry key="app/src/main/res/layout/filter_dialog.xml" value="0.34148550724637683" />
+        <entry key="app/src/main/res/layout/fragment_case_study_detail.xml" value="0.35450236966824644" />
+        <entry key="app/src/main/res/layout/fragment_study_case.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/fragment_study_case_favorite.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/holder_case_study.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/item_chip_category.xml" value="0.17604166666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
